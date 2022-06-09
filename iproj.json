@@ -1,0 +1,15 @@
+{
+    "description": "Merlin10",
+    "version": "0.0.1",
+    "includePath": [
+        "M10_SRC/QPROTOSRC    "
+    ],
+    "repository": "git@github.com:AdrianAtArcad/M10Lab.git",
+    "objlib": "&L01",
+    "curlib": "*CRTDFT",
+    "extensions": {
+        "arcad": {
+            "libraryPrefix": "M10"
+        }
+    }
+}
