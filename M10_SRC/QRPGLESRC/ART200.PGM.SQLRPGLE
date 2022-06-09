@@ -53,8 +53,8 @@
      d count           s              3i 0
      d mode            s              3
 
-     d crt             c                   'CRT'
-     d upd             c                   'UPD'
+     d crt             c                   'crt'
+     d upd             c                   'upd'
      d prp             c                   'prp'
      d lod             c                   'lod'
      d dsp             c                   'dsp'
@@ -64,14 +64,14 @@
       /free
 
        select;
-       when panel = 1;
-         exsr pnl01;
-       when panel = 2;
-         exsr pnl02;
-       when panel = 3;
-         exsr pnl03;
-       other;
-         exsr pnl00;
+            when panel = 1;
+                exsr pnl01;
+            when panel = 2;
+                exsr pnl02;
+            when panel = 3;
+                exsr pnl03;
+            other;
+                exsr pnl00;
        endsl;
        //- Subfiles  01 Subroutines --------------------------------------  ---
        begsr pnl01;
